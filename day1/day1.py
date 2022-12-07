@@ -6,8 +6,8 @@ from adventofcode22.dataparser import parseFromFile
 class Day1:
 
     def getInput(self):
-        projectDir = os.getcwd()
-        inputFile = f"{projectDir}/day1/input.txt"
+        currDir = os.getcwd()
+        inputFile = f"{currDir}/day1/input.txt"
         return parseFromFile(inputFile)
 
     def part1(self):

@@ -9,3 +9,11 @@ def parseFromFile(file):
         data.append(_.split('\n'))
 
     return data
+
+def parseFromFileWithoutDoubleLine(file):
+    data = []
+    with open(file) as f:
+        input = f.read()
+
+    data = input.split('\n')
+    return data
